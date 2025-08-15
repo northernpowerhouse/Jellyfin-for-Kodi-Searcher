@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <!-- The label ID 32000 points to the language file -->
+  <category label="32000">
+    <setting id="search.libraries" type="multistring" label="32001" values="plugin://plugin.video.jellyfin.searcher/?action=get_categories" default="">
+      <level>1</level>
+      <description>32002</description>
+    </setting>
+  </category>
+  <category label="32003">
+    <setting id="cache.rebuild" type="action" label="32004" option="close" action="RunPlugin(plugin://plugin.video.jellyfin.searcher/?action=rebuild_cache)">
+      <level>1</level>
+      <description>32005</description>
+    </setting>
+  </category>
+</settings>
