@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.jellyfin.searcher"
+       name="Jellyfin Library Searcher"
+       version="1.3.0"
+       provider-name="You">
+
+  <requires>
+    <!-- The checker recommends 3.0.1 for Omega, so we will use it -->
+    <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="plugin.video.jellyfin" optional="true"/>
+  </requires>
+
+  <!-- This defines the addon as an executable video plugin. -->
+  <!-- It needs no other attributes to link the settings. -->
+  <extension point="xbmc.python.pluginsource"
+             library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <!-- This provides the text and information for the addon browser. -->
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Advanced search for the Jellyfin for Kodi addon.</summary>
+    <description lang="en_GB">Crawls user-selected Jellyfin libraries to create a searchable cache of all media. This allows for fast, integrated searching for users of the Jellyfin 'Add-on Mode'. First, configure the libraries to search in the addon settings, then run the 'Rebuild Cache' action.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
+
+</addon>
